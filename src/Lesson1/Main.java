@@ -16,10 +16,8 @@ public class Main {
             System.out.println("Part 3 - Cycles");
             int LessonPartNumber = scanner.nextInt();
             switch (LessonPartNumber) {
-                case 0: {
-                    isRunning = false;
-                }
-                case 1: {
+                case 0 -> isRunning = false;
+                case 1 -> {
                     System.out.println("Lesson 1: Part " + LessonPartNumber + " Please, enter task number (0 - exit)");
                     int taskNumber = scanner.nextInt();
                     switch (taskNumber) {
@@ -51,7 +49,7 @@ public class Main {
                         default -> System.out.println("Incorrect number, please, try again");
                     }
                 }
-                case 2: {
+                case 2 -> {
                     System.out.println("Lesson 1: Part " + LessonPartNumber + " Please, enter task number (0 - exit)");
                     int taskNumber = scanner.nextInt();
                     switch (taskNumber) {
@@ -79,7 +77,7 @@ public class Main {
                         default -> System.out.println("Incorrect number, please, try again");
                     }
                 }
-                case 3: {
+                case 3 -> {
                     System.out.println("Lesson 1: Part " + LessonPartNumber + " Please, enter task number (0 - exit)");
                     int taskNumber = scanner.nextInt();
                     switch (taskNumber) {
@@ -119,7 +117,7 @@ public class Main {
                         default -> System.out.println("Incorrect number, please, try again");
                     }
                 }
-                default: System.out.println("Please, Enter correct lesson part number");
+                default -> System.out.println("Please, Enter correct lesson part number");
             }
 
 
